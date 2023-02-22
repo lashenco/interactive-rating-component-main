@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Overpass;
+  background-color: #141519;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color:  #1e252f;
+  width: 370px;
+  padding: 30px;
+  border-radius: 20px;
+}
+.container .rating .span , .img{
+  width: 50px;
+  height: 50px;
+  background-color: #262f38;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #262c38;
+  transition: 0.4s;
+}
+h2{
+  margin: 20px 0;
+  font-weight: bold;
+  letter-spacing: -1px;
+  font-size: 1.6rem;
+}
+p{
+  color: #959eac;
+  margin: 20px 0;
+  font-size: 15px;
+}
+.container .rating .numbers{
+  display: flex;
+  justify-content: space-between;
+  color: #959eac;
+}
+.container .rating .span{
+  cursor: pointer;
+}
+.container .rating .num{
+  background-color: #fb7413;
+  color: white;
+}
+.container .rating .span:hover{
+  background-color: #7c8898;
+  color: white;
+}
+.container .rating .num:hover{
+  background-color: #fb7413;
+}
+.container .rating button{
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #fb7413;
+  border: 0;
+  border-radius: 20px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  transition: .4s;
+  cursor: pointer;
+}
+.container .rating button:hover{
+  background-color: white;
+  color:#fb7413 ;
+}
+.container .state{
+  text-align: center;
+  display: none;
+}
+.container .state .selected{
+  width: fit-content;
+  margin: 15px auto;
+  background-color: #263039;
+  color: #fb7413;
+  border-radius: 10px;
+  font-size: 11px;
+  padding: 5px 10px;
+}
